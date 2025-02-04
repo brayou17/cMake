@@ -6,7 +6,7 @@ on:
 
 env:
   BUILD_TYPE: Debug
-  VCPKG_ROOT: C:\Users\b.ansel\vcpkg
+  VCPKG_ROOT: C:\Users\b.ansel\vcpkg\..\..\..\..\C:\Users\b.ansel\vcpkg
 
 jobs:
   build:
