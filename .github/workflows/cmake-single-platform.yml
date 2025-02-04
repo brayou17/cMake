@@ -5,8 +5,7 @@ on:
     branches: [ "main" ]
 
 env:
-  BUILD_TYPE: Debug
-  VCPKG_ROOT: C:\Users\b.ansel\vcpkg\..\..\..\..\C:\Users\b.ansel\vcpkg
+  BUILD_TYPE: Release
 
 jobs:
   build:
