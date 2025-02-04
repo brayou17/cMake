@@ -45,7 +45,7 @@ jobs:
     - name: Run
       working-directory: ${{github.workspace}}/build/x86-debug/src/${{env.BUILD_TYPE}}
       run: |
-        start /b .\cours_test.exe
+        start /b .\cMake.exe
         timeout /t 5
-        taskkill /f /im cours_test.exe
+        taskkill /f /im cMake.exe
       shell: cmd
