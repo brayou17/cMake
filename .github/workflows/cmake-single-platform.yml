@@ -5,7 +5,7 @@ on:
     branches: [ "main" ]
 
 env:
-  BUILD_TYPE: Release
+  BUILD_TYPE: Debug
 
 jobs:
   build:
@@ -43,7 +43,7 @@ jobs:
       run: cmake --build ${{github.workspace}}/build --config ${{env.BUILD_TYPE}}
 
     - name: Run
-      working-directory: ${{github.workspace}}/build/src/${{env.BUILD_TYPE}}
+      working-directory: ${{github.workspace}}/build/x86-debug/src/${{env.BUILD_TYPE}}
       run: |
         start /b .\cours_test.exe
         timeout /t 5
