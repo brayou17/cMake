@@ -23,6 +23,11 @@ endif()
 
 find_package(SFML COMPONENTS system window graphics audio CONFIG REQUIRED)
 
+find_program(CCACHE_PROGRAM ccache)
+
+if(CCACHE_PROGRAM)
+	set()
+endif()
 
 target_link_libraries(${PROJECT_NAME} PRIVATE
 	sfml-audio
